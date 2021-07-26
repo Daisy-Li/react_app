@@ -1,0 +1,219 @@
+/** reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: #303030;
+}
+
+/* ios默认文本框阴影 */
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* 低版本安卓文本框层级问题 */
+input:focus {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PingFangSC", "SimHei", "Helvetica Neue", Arial, "Droid Sans",
+    sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: 100%;
+  background: #f2f3f3;
+}
+
+a,
+button,
+input {
+  text-decoration: none;
+  outline: 0 none;
+}
+
+img {
+  vertical-align: bottom;
+  border: 0 none;
+  -ms-interpolation-mode: bicubic;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  border: 0 none;
+  background: transparent;
+}
+
+em {
+  font-style: normal;
+}
+
+.hide {
+  display: none;
+}
+
+@font-face {
+  font-family: "JDZhengHei-01-Bold";
+  src: url("./font/JDZhengHei-01-Bold.ttf");
+}
+
+@font-face {
+  font-family: "JDZhengHei-01-Regular";
+  src: url("./font/JDZhengHei-01-Regular.ttf");
+}
+
+@font-face {
+  font-family: "JDZhengHei-01-Light";
+  src: url("./font/JDZhengHei-01-Light.ttf");
+}

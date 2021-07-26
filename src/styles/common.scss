@@ -1,0 +1,28 @@
+// 所有页面公用的样式
+// 适配 iPhone X 底部留白
+#app {
+  padding-bottom: constant(safe-area-inset-bottom); /* 兼容 iOS < 11.2 */
+  padding-bottom: env(safe-area-inset-bottom);
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+body::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+body {
+  font-size: 26px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: JDLANGZHENGTI--GB1-0;
+  src: url("./font/JDLangZhengTi.woff") format("woff");
+}
