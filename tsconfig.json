@@ -6,6 +6,9 @@
       "dom.iterable",
       "esnext"
     ],
+    "allowUnreachableCode": true,
+    "sourceMap": true,
+    "removeComments": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,7 +21,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "outDir": "build",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@layout/*": ["src/layout/*"]
+    }
   },
   "include": [
     "src"
