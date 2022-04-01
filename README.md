@@ -123,6 +123,8 @@ yarn eject
 
 特殊的依赖需要手动安装
 
+特别注意下 node-sass有可能安装失败，可以多次尝试。
+
 ```
 "@types/axios": "^0.14.0",
 "@types/classnames": "^2.2.11",
@@ -276,4 +278,27 @@ extends: [
   "analyze": "yarn build && source-map-explorer 'build/static/js/*.js'",
   "generate": "node scripts/generateLogDataFile.js"
 },
+```
+#### 7.src目录结构
+```
+├── build                         # 打包后生成的文件
+├── node_modules                   # 安装的依赖
+├── public                         # 静态资源文件夹
+└── src
+    ├── assets                     # 项目依赖的一些静态资源
+    ├── components                 # 公共组件
+    ├── api                    # 接口请求
+    ├── utils                      # 工具方法
+    ├── pages                      # 页面视图组件
+    ├── styles                     # 公共样式 reset
+├── .env.prod                      # 环境变量，在生产环境被载入
+├── .env.dev                       # 环境变量，在开发环境被载入
+├── .env.yufa                      # 环境变量，在预发环境被载入
+├── .eslintrc.js                   # 代码检查配置文件
+├── .gitignore                     # git忽略文件
+├── .huskyrc                       # 阻止错误的 git 提交
+├── package.json                   # npm包描述文件
+├── yarn.lock                      # 记录当前状态下实际安装的各个npm package的具体来源和版本号
+├── README.md                      # 项目说明
+├── config-overrides.js            # react-app配置文件
 ```
